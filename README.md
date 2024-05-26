@@ -14,6 +14,8 @@ This exercise was completed with the guidance of an article by **Laura Collins**
 - Performed Terraform commands (`terraform init`, `validate`, `plan`, and `apply`) to provision the specified resources.
 - Accessed the created EC2 instance and completed the Jenkins installation.
 
+At the end of the exercise, I deleted all the created resources with `terraform destroy` command.
+
 ## Screenshots of the Work
 
 ### Jenkins Server on EC2
