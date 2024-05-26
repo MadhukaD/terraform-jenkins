@@ -1,24 +1,24 @@
 # Deploying EC2 Instance and S3 Bucket with Jenkins using Terraform
 
-This exercise was completed with the guidence of an article by **Laura Collins**. Read the article [here](https://blog.devops.dev/deploying-ec2-instance-and-s3-bucket-with-jenkins-using-terraform-668e13c16687)
+This exercise was completed with the guidance of an article by **Laura Collins**. Read the article [here](https://blog.devops.dev/deploying-ec2-instance-and-s3-bucket-with-jenkins-using-terraform-668e13c16687).
 
-## Tasks performed:
+## Tasks Performed:
 
-- Create an AWS Cloud9 environment
-- Install Terraform in the created environment
-- Create AWS credentials with AWS IAM and configure Cloud9 enveironment with them
-- Create the providers.tf and add the provider block for AWS
-- Create the main.tf to provision the security group, EC2 instance and S3 bucket
-- Create the variables.tf to avoid hardcoding the values in main.tf
-- Create the install_jenkins.sh script to bootstrap the ec2 instance that installs and starts Jenkins
-- Perform Terraform commands (terraform init, validate, plan and apply) to provision the specified resources
-- Access the created EC2 instance and complete the Jenkins installation
+- Created an AWS Cloud9 environment.
+- Installed Terraform in the created environment.
+- Created AWS credentials with AWS IAM and configured the Cloud9 environment with them.
+- Created the `providers.tf` file and added the provider block for AWS.
+- Created the `main.tf` file to provision the security group, EC2 instance, and S3 bucket.
+- Created the `variables.tf` file to avoid hardcoding values in `main.tf`.
+- Created the `install_jenkins.sh` script to bootstrap the EC2 instance, which installs and starts Jenkins.
+- Performed Terraform commands (`terraform init`, `validate`, `plan`, and `apply`) to provision the specified resources.
+- Accessed the created EC2 instance and completed the Jenkins installation.
 
-## Screenshots of the work
+## Screenshots of the Work
 
 ### Jenkins Server on EC2
 
-![image](https://github.com/MadhukaD/terraform-jenkins/assets/83831219/dbab43b7-444c-45cd-8475-00650d25bade)
+![Jenkins Server](https://github.com/MadhukaD/terraform-jenkins/assets/83831219/dbab43b7-444c-45cd-8475-00650d25bade)
 
 ### Cloud9 Environment
 
