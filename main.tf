@@ -4,6 +4,7 @@ resource "aws_security_group" "jenkins_sg" {
   description = "Allow access to ports 8080 and 22"
   vpc_id      = var.vpc_id
 
+  #Inbound Rules for ports 8080 and 22
   ingress {
     description = "allow all traffic to 8080"
     from_port   = 8080
@@ -20,6 +21,7 @@ resource "aws_security_group" "jenkins_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  #Outbound rule
   egress {
     from_port   = 0
     to_port     = 0
@@ -44,6 +46,7 @@ resource "aws_instance" "web_server" {
   }
 }
 
+# Terraform Resource Block to create S3 bucket
 resource "aws_s3_bucket" "tf-bucket" {
   bucket = var.mybucketname
 
