@@ -16,7 +16,6 @@ variable "vpc_id" {
     default = "vpc-0d85910be8a76cda2"
 }
 
-
 variable "instance" {
     description = "this is my instance type"
     type = string
@@ -24,7 +23,7 @@ variable "instance" {
 }
 
 variable "mybucketname" {
-    description = "this is my instance type"
+    description = "this is my bucket name"
     type = string
     default = "my-tf-test-bucket-for-jenkins"
-    }
+}
